@@ -1,5 +1,3 @@
-#version 300 es
-
 #define PI 3.1415926535897932384626433832795
 
 precision mediump float;
@@ -13,8 +11,6 @@ vec2 i = vec2(0.0, 1.0);
 
 vec4 color_light = vec4(0.9, 0.9, 0.9, 1.0);
 vec4 color_dark = vec4(0.4, 0.4, 0.4, 1.0);
-
-out vec4 outColor;
 
 float time() {
     return 1.0 + u_time / 10.0;
@@ -109,5 +105,5 @@ void main() {
     vec2 w = M2(z, unit, - unit);
     w = loxodromic(w);
     
-    outColor = dartboard(w);
+    gl_FragColor = dartboard(w);
 }

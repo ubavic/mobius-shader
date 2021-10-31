@@ -1,6 +1,6 @@
 # Möbius shader
 
-Simple GLSL ES 3.0 fragment shader for rendering Möbius transformations.
+Simple GLSL ES fragment shader for rendering Möbius transformations.
 
 ![Example render](render.png)
 
@@ -9,3 +9,5 @@ Simple GLSL ES 3.0 fragment shader for rendering Möbius transformations.
 You can directly paste the content of `main.glsl` to [The Book of Shaders Editor](https://thebookofshaders.com/edit.php).
 
 Usage with other shader editors requires little tweaking (renaming uniforms, etc...)
+
+For explanation of Möbius transformations classification, check this [article](https://fritzm.github.io/moebius.html) by Fritz Mueller.
